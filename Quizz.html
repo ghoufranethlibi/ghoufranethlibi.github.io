@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table id="design0">
+        <tr>
+        <section>
+                <td class="design1">
+                <aside>
+                        <span id="bloc_noir_quiz">
+                                <span id="blanc">
+                                        <span id="blue1">
+                                                <span id="cercle">
+                                                <img src="img/quiz.jpg" alt="photo de profile" id="maphoto">
+                                                <br>
+                                                <img src="img/home.jpg" alt="" id="home_icon"><a href="index.html">Page d'accueil</a>
+                                                </span>
+                                        </span>
+                                </span>
+                        </span>
+                </aside>
+                </td>
+        </section>
+        
+                <td class="design1">
+                <header>
+                        <span id="blue2_quiz">
+                                 <h1 id="quiz">Quizzzz !!</h1>
+                                <div id="menu">
+                                        <table id="table_menu">
+                                                <tr>
+                                                        <td></td>
+                                                        <td>
+                                                                <select id="menu_selection" onchange="pages()">
+                                                                        <option disabled selected>Parcours</option>
+                                                                        <option value="diplomes.html">Diplomes</option>
+                                                                        <option value="competences_technique.html">Compétences Technique</option>
+                                                                        <option value="formations.html">formations</option>
+                                                                </select>
+                                                        </td>
+                                                        <td>
+                                                                <a href="centre_d'interet.html">Centres d'intérêt</a>
+                                                        </td>
+                                                        <td><a href="Quizz.html">Quizz</a></td>
+                                                        <td><a href="contact.html">Contact</a></td>
+                                                        <td><a href="avis.html">Avis sur l’IIT</a></td>
+                                                </tr>
+                                        </table>
+                                </div>
+                        </span>
+                </header>
+                <section>
+                    <img src="img/clock.jpg" alt="" id="clock">
+                    <div id="start">
+                        <label for="">:) Où écrit-on le CSS ?</label><br>
+                        <br>
+                        <label>
+                            <input type="radio" name="css" value="body">
+                            dans le body
+                          </label><br>
+                          <label>
+                            <input type="radio" name="css" value="css">
+                            dans un fichier .css
+                          </label><br>
+                          <label>
+                            <input type="radio" name="css" value="js">
+                            dans un fichier .js
+                          </label><br>
+                          <br><br>
+                          <label> :) Dans quel type de fichier le point-virgule (;)<br> est-il obligatoire ?</label><br>
+                          <br>
+                          <label>
+                              <input type="radio" name="fc" value="fc_css">
+                              dans un fichier css
+                            </label><br>
+                            <label>
+                              <input type="radio" name="fc" value="html">
+                              dans un fichier HTML
+                            </label><br>
+                            <label>
+                              <input type="radio" name="fc" value="fc_js">
+                              dans un fichier .js
+                            </label><br>
+                            <br><br>
+                            <label for="">:) est ce qu'on peut repeter l'ID ?</label><br>
+                            <br>
+                            <label>
+                                <input type="radio" name="id" value="oui">
+                                Oui
+                              </label><br>
+                              <label>
+                                <input type="radio" name="id" value="non">
+                                Non
+                              </label><br>
+                              <br><br>
+                              <label for=""> :) quel est le role du "nbsp"? </label><br><br>
+                              <input type="radio" name="role" value="retour">
+                              retour a la ligne
+                            </label><br>
+                            <label>
+                              <input type="radio" name="role" value="copier">
+                              copier_coller
+                            </label><br>
+                            <label>
+                              <input type="radio" name="role" value="espace">
+                              faire un espace
+                            </label><br>
+                            <br><br>
+                            
+                            <label for=""> :) quel est le difference entre "span" et "div"? </label><br><br>
+                            <input type="radio" name="diff" value="aucun">
+                            aucun difference n'existe
+                          </label><br><br>
+                          <label>
+                            <input type="radio" name="diff" value="dessous">
+                            deux balises successives de "span"  <br> seront affichésl'un au dessous
+                            de l'autre 
+                          </label><br><br>
+                          <label>
+                            <input type="radio" name="diff" value="rep_vrai">
+                            deux balises successives de <div> seront affichés l'un après
+                                l'autre verticalement
+                          </label><br>
+                          <br><br>
+                          <label for=""> :) que faire pour Sélectionne toutes  les balises <br>"em" situées à l'intérieur d'une balise "p"? </label><br><br>
+                              <input type="radio" name="inter" value="*">
+                              utilise l'*
+                            </label><br>
+                            <label>
+                              <input type="radio" name="inter" value="#">
+                              utilise le #
+                            </label><br>
+                            <label>
+                              <input type="radio" name="inter" value=",">
+                              utilise le ,
+                            </label><br>
+                            <br><br>
+                            <label for=""> :) on utilise "float"pour l'habillage? </label><br><br>
+                            <input type="radio" name="float" value="vrai">
+                            Vrai
+                          </label><br>
+                          <label>
+                            <input type="radio" name="float" value="faux">
+                           Faux
+                          </label>
+                          
+                          <br><br>
+                          <label for=""> :) word-wrap </label><br><br>
+                          <input type="radio" name="word" value="retour1">
+                          retour a la ligne
+                        </label><br>
+                        <label>
+                          <input type="radio" name="word" value="copier1">
+                          copier_coller
+                        </label><br>
+                        <label>
+                          <input type="radio" name="word" value="coupe">
+                          couper les textes trop larges
+                        </label><br>
+                        <br><br>
+
+                        <label for="">:) que retourne border-radius : 50%; ?</label><br>
+                        <br>
+                        <label>
+                            <input type="radio" name="radius" value="rien">
+                            rien
+                          </label><br>
+                          <label>
+                            <input type="radio" name="radius" value="cercle">
+                            cercle
+                          </label><br>
+                          <label>
+                            <input type="radio" name="radius" value="carre">
+                            carré
+                          </label><br>
+                          <br><br>
+
+                          <label for="">:) que signifie CSS ?</label><br>
+                        <br>
+                        <label>
+                            <input type="radio" name="titre" value="correct">
+                            Cascading Style Sheets
+                          </label><br>
+                          <label>
+                            <input type="radio" name="titre" value="false">
+                            Cascad Style Shets
+                          </label><br>
+                          <br><input type="submit" id="submit" value="Resultat">
+                    </div>
+                </section>
+            </td>
+        </tr>
+    </table>
+<script src="script.js"></script>
+</body>
+</html>
